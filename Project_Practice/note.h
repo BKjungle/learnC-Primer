@@ -1,7 +1,16 @@
-第一部分 c++ 基础
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <list> 
+#include <algorithm>
+
+using namespace std;
+//第一部分 c++ 基础
+class partOne
 {
 
-第二章 变量和基本类型
+//第二章 变量和基本类型
 	{
 	类型转换: a) 如果表达式里既有带符号类型又有无符号类型，当带符号类型取值为负时会出现异常结果
 				因为带符号数会自动地转换为无符号数。即 转换为 该负数对无符号类型能表示的数值总数"取模"后的余数。__ p34
@@ -63,7 +72,7 @@
 
 	}
 
-第三章	字符串(string) 向量(vector) 数组array
+//第三章	字符串(string) 向量(vector) 数组array
 		{
 			1、命名空间： 头文件不应包含 using 生命
 				2、string 	cin >> s  // 遇空格结束输入
