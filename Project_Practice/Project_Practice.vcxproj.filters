@@ -23,5 +23,8 @@
     <ClCompile Include="T.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="note.json">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
