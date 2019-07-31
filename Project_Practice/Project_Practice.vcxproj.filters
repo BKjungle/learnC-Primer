@@ -18,13 +18,13 @@
     <ClInclude Include="T.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="note.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="T.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="note.json">
-      <Filter>资源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

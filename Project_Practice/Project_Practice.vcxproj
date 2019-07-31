@@ -123,10 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="note.h" />
     <ClInclude Include="T.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="note.json" />
     <ClCompile Include="T.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
