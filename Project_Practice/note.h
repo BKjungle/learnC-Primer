@@ -1,12 +1,6 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <list> 
-#include <set>
-#include <algorithm>
+#include "stdafx.h"
 
-using namespace std;
+
 //第一部分 c++ 基础
 class partOne
 {
@@ -76,7 +70,9 @@ class partOne
 //第三章	字符串(string) 向量(vector) 数组array
 	{
 			1、命名空间： 头文件不应包含 using 生命
-			2、string 	cin >> s  // 遇空格结束输入
+			2、
+			{
+				string 	cin >> s  // 遇空格结束输入
 					cout << s
 					getline(cin, s); //遇换行符结束一行，但不把cin中的换行符，写入s
 				s.size(); //返回值为unsigned int ，与有符号变量计算时要注意
@@ -85,8 +81,10 @@ class partOne
 
 				建议使用c++版本的c标准库头文件，例如： cctype  对应C语言中的 ctype.h
 					范围for   for (auto c : str5) // 基于范围的for语句 遍历 string字符序列。若想改变序列元素，循环变量c定义成引用类型即可
+			}
 
 			3、迭代器：string::iterator  it;
+			{
 				cout << c << endl;
 				循环读入含标点的字符串，去标点后输出：
 					for (string s; getline(cin, s); cout << endl)
@@ -109,8 +107,9 @@ class partOne
 				习题： vector<string> v8;
 				for (string buffer; cin >> buffer; v8.push_back(buffer));  // 循环输入 字符串  遇文件结束符EOF结束，windos下为ctrl+z 
 
-
+			}
 			4、迭代器
+			{
 					1 - 若容器为空，begin和end返回同一iterator，尾后迭代器(end)
 					2 - *iter  // 获取所指元素的引用(即内容可更改)
 					3 - iter->mem // 获取该迭代器所指元素 内的mem元素
@@ -137,7 +136,7 @@ class partOne
 					cout << word << " ";
 				}
 
-			3.4.2	迭代器运算：
+				3.4.2	迭代器运算：
 					iter + n // 后移	
 					iter - n // 前移
 					iter += n // 后移新位置
@@ -145,7 +144,7 @@ class partOne
 					iter2 - iter1 // 得到的是差值 
 						> , < , >= , <= , != // 判断
 
-					auto mid = v1.begin() + v1.size() / 2;
+				auto mid = v1.begin() + v1.size() / 2;
 				if (iter < mid)  // 处理前半部分元素
 
 			  // redo the 3.3.3  use iterator
@@ -160,6 +159,8 @@ class partOne
 					}
 					cout << *beg << endl;
 				}
+
+			}
 
 	}
 

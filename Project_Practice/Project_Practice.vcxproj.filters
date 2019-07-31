@@ -13,13 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\pub">
+      <UniqueIdentifier>{e481104f-6f53-47ae-8976-7dccc3599960}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="T.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="note.h">
       <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件\pub</Filter>
+    </ClInclude>
+    <ClInclude Include="T.h">
+      <Filter>头文件\pub</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterFour.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
