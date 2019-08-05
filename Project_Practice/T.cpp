@@ -6,7 +6,7 @@ int main()
 {
 	std::cout << "Hello World ~" << std::endl;
 
-	new ChapterThree();
+	new ChapterThree(2);
 
 
 	show();

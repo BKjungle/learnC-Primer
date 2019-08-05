@@ -5,9 +5,9 @@
 class ChapterThree
 {
 public:
-	ChapterThree(int a) {
+	ChapterThree(int a ) {
 		//------
-		switch ()
+		switch () 
 		{
 		case 1:
 			string s("some string");
@@ -67,10 +67,10 @@ public:
 
 		default:
 			break;
-
+			
 
 		}
-
+		
 	}
 
 };
