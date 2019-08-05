@@ -2,10 +2,10 @@
 #include "stdafx.h"
 
 
-class ChapterFour
+class ChapterThree
 {
 public:
-	ChapterFour() {
+	ChapterThree() {
 		//------
 		string s("some string");
 		if (s.begin() != s.end())

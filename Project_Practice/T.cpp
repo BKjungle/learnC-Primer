@@ -1,12 +1,12 @@
 #include "T.h"
-#include "ChapterFour.h"
+#include "ChapterThree.h"
 // ¿ªÊ¼
 
 int main()
 {
 	std::cout << "Hello World ~" << std::endl;
 
-	new ChapterFour();
+	new ChapterThree();
 
 
 	show();

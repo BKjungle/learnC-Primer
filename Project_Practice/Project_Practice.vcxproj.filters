@@ -27,7 +27,7 @@
     <ClInclude Include="T.h">
       <Filter>头文件\pub</Filter>
     </ClInclude>
-    <ClInclude Include="ChapterFour.h">
+    <ClInclude Include="ChapterThree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
