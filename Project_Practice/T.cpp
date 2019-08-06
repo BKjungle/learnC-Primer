@@ -2,11 +2,13 @@
 #include "ChapterThree.h"
 // ¿ªÊ¼
 
+
 int main()
 {
-	std::cout << "Hello World ~" << std::endl;
 
-	new ChapterThree(2);
+	std::cout << "begin------------------------> ~" << std::endl;
+
+	new ChapterThree(3);
 
 
 	show();
