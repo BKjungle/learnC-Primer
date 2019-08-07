@@ -91,6 +91,20 @@ public:
 				int a[5] = {  };
 				int* p = &a[5];//尾后元素
 				int t = p[-1]; //  -1 表示p 位置向前一个位移的元素，即a[4]
+
+				// 类型声明
+				int (arr1)[3];
+				using  arr2 = int[3];
+				typedef int arr3[3];
+
+				cout << "arr1 type=" << typeid(arr1).name() << endl;
+				cout << "arr2 type=" << typeid(arr2).name() << endl;
+				cout << "arr3 type=" << typeid(arr3).name() << endl;
+
+				arr1[1] = 1;
+				cout << arr1[1] << endl;
+
+
 			}
 			break;
 
