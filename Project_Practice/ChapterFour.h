@@ -55,6 +55,12 @@ public:
 
 		}
 		break;
+		case  11:
+		{
+			auto ret = 3.05 + 3;  
+			cout << typeid(ret).name() << endl;
+		}
+		break;
 		default:
 			;
 		}

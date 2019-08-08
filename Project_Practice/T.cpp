@@ -10,7 +10,7 @@ int main()
 	//std::cout << "begin------------------------> ~" << std::endl;
 
 	//new ChapterThree(3);
-	new ChapterFour(8);
+	new ChapterFour(11);
 
 
 	show();
