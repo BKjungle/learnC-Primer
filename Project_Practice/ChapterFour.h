@@ -41,6 +41,20 @@ public:
 			i = d = 3.5;  cout << d << "-" << i << endl;
 		}
 		break;
+		case 8:
+		{
+			unsigned long  quiz1 = 0,*p;
+			quiz1 |= 1UL << 27;
+			cout << sizeof('0')<< sizeof *p << endl;
+			unsigned char q = 0161;
+			cout << (~q << 6) << endl;
+			int* pint = 0;
+			cout << "in vs2019 ,the pointer`size of int =  " <<sizeof( pint) << endl;
+			cout << " int size= " << sizeof (int) << endl;
+			cout << " unsigned long  size = " << sizeof(unsigned long) << endl;
+
+		}
+		break;
 		default:
 			;
 		}
