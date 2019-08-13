@@ -80,7 +80,7 @@ public:
 		}
 		break;
 		default:
-			;
+			break;
 		}
 	}
 };
