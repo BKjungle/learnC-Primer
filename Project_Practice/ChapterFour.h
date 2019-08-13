@@ -55,10 +55,28 @@ public:
 
 		}
 		break;
-		case  11:
+		case  11:// type ×ª»»
 		{
 			auto ret = 3.05 + 3;  
 			cout << typeid(ret).name() << endl;
+				
+			const char* cp = "static_cast--> string";
+			string str = static_cast<string>(cp);
+			cout << str << endl;
+			//------
+			int i = -57; double d = 3.1;
+			i = static_cast<int>(d) * i;
+			cout << i << endl;
+			//------
+			int n = 1;
+			n |= 0x1;
+			cout << "n = " << n << endl;
+			n <<= 8;
+			cout << "n = " << n << endl;
+			char* pc = reinterpret_cast<char*>(&n);
+			
+			cout << *(pc+1) +0 << endl;
+
 		}
 		break;
 		default:
