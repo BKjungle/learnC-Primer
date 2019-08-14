@@ -17,6 +17,11 @@ public:
 
 		}
 			break;
+		case 2:
+		{
+			
+		}
+			break;
 		default:
 			cout << "in func:" << __FUNCTION__ << "line:"<< __LINE__<< endl;
 			break;
