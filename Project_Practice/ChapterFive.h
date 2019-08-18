@@ -1,6 +1,6 @@
 #pragma once
 #include "stdafx.h"
-
+//#include <stdexpect>
 
 class ChapterFive
 {
@@ -49,6 +49,34 @@ public:
 			}
 		}
 		break;
+		case 4://异常 
+		{
+			int  m1, m2;
+			while (cin >> m1 >> m2) 
+			{
+				try{
+					if (0 == m2) {
+						throw range_error(" Divident is not correct\n");//抛出对象
+					}
+				}
+				catch (range_error err) {
+					cout << err.what()
+						<< " please check you input "
+						<< " Try again? Enter y or n " << endl;
+					char input;
+					cin >> input;
+						if ('y' == input)
+							continue;
+						else
+							break;
+				}
+				break;			
+			
+			};
+				
+
+
+		}
 		default:
 			cout << "in func:" << __FUNCTION__ << "line:"<< __LINE__<< endl;
 			break;
