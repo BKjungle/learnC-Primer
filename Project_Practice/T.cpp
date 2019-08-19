@@ -2,6 +2,7 @@
 #include "ChapterThree.h"
 #include "ChapterFour.h"
 #include "ChapterFive.h"
+#include "ChapterSix.h"
 // ¿ªÊ¼
 
 
@@ -12,7 +13,8 @@ int main()
 	
 	//new ChapterThree(3);
 	//new ChapterFour(11);
-	new ChapterFive(4);
+	//new ChapterFive(4);
+	new ChapterSix(1);
 
 	show();
 	return 0;
