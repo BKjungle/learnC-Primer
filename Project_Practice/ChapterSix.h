@@ -8,7 +8,7 @@ public:
 		switch (a)
 		{
 		case 1: {
-
+			cout << true << endl;
 		}
 				break;
 		default:
