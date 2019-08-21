@@ -14,7 +14,7 @@ int main()
 	//new ChapterThree(3);
 	//new ChapterFour(11);
 	//new ChapterFive(4);
-	new ChapterSix(1);
+	new ChapterSix(2);
 
 	show();
 	return 0;

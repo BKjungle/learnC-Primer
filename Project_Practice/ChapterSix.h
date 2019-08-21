@@ -20,8 +20,27 @@ public:
 			printE(mul);
 		}
 				break;
+		case 2: // initializer_list 
+		{
+			string s0("initializer_list");
+			string s1("info1");
+			string s2("info2");
+			err_msg({s0,s1,s2});
+
+		}
+		break;
+		case 3: // Ê¡ÂÔ·û 
 		default:
 			break;
+		}
+	}
+
+	void err_msg(initializer_list<string> strl) {
+		for (auto i = strl.begin(); i != strl.end(); ++i) {
+			if ("info1" == *i) {
+				//*i = "info1_";  // err  initializer element is const 
+			}
+			cout << *i << endl;
 		}
 	}
 
