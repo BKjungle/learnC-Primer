@@ -17,5 +17,5 @@ int main()
 	new ChapterSix(2);
 
 	show();
-	return 0;
+	return EXIT_SUCCESS;
 }
