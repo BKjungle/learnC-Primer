@@ -1,6 +1,6 @@
 #pragma once
 #include "stdafx.h"
-
+#include "stdarg.h"
 class ChapterSix
 {
 public:
@@ -26,16 +26,37 @@ public:
 			string s1("info1");
 			string s2("info2");
 			err_msg({s0,s1,s2});
-
+			any_capital(string("fjsfksSsfksj"));
 		}
 		break;
 		case 3: // Ê¡ÂÔ·û 
 		{
+			ArgFunc("argu1","sfs",3,4.0);
+			vector<int>  vf = { 1,2,3,4,5,6,7 };
+			printV(0,vf);
 
+			typedef string(&arrType)[10];
+			arrType func(arrType a);
+
+			string (&func(int a))[10];//
+			auto func(arrType a) -> string (&)[10];
+
+		
+
+			string a[10];
+			decltype(a)& func(arrType a);
 		}
 		break;
 		default:
 			break;
+		}
+	}
+	void printV(size_t index, vector<int> & rf) {
+		if (index == rf.size() - 1)
+			cout << rf[index];
+		else {
+			cout << rf[index] << endl;
+			printV(index+1, rf);
 		}
 	}
 
@@ -64,12 +85,27 @@ public:
 	bool any_capital( string const& str)
 
 	{
-		// str[2] = 's';
+		//str[2] = 's';
 		for (auto ch : str)
 
 			if (isupper(ch)) return true;
 
 		return false;
 
+	}
+
+	void ArgFunc(const char* str, ...)
+	{
+		char* s = NULL;
+		int second = 0;
+		double  three = 0.0;
+
+		va_list ap;
+		va_start(ap, str);
+		s = va_arg(ap, char*);
+		second = va_arg(ap, int);
+		three = va_arg(ap, double);
+
+		cout << str<< s << second << three << endl;
 	}
 };
