@@ -108,4 +108,15 @@ public:
 
 		cout << str<< s << second << three << endl;
 	}
+
+
+	// жиди
+	void  cz(int& tt)
+	{
+		cout << tt << endl;
+	}
+	void cz(const int& tt) {
+		cout << tt << endl;
+	}
+
 };
