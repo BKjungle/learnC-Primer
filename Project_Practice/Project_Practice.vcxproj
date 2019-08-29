@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClInclude Include="ChapterFive.h" />
     <ClInclude Include="ChapterFour.h" />
+    <ClInclude Include="ChapterSeven.h" />
     <ClInclude Include="ChapterSix.h" />
     <ClInclude Include="ChapterThree.h" />
     <ClInclude Include="note.h" />
