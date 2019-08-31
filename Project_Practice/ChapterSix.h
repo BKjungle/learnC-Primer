@@ -1,6 +1,8 @@
 #pragma once
 #include "stdafx.h"
 #include "stdarg.h"
+#include <cassert>
+#define NDEBUG
 class ChapterSix
 {
 public:
@@ -47,6 +49,21 @@ public:
 			decltype(a)& func(arrType a);
 		}
 		break;
+		case 4: {
+
+#ifdef NDEBUG
+
+			assert(0);
+			cout << "define NODEBUG" << endl;
+#endif // !NDEBUG
+
+			cout << __func__ << endl;
+			cout << __LINE__ << endl;
+			cout << __TIME__ << endl;
+			cout << __DATE__ << endl;
+
+
+		}
 		default:
 			break;
 		}
