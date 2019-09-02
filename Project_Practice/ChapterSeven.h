@@ -36,36 +36,73 @@ ostream& print(ostream& os, const Person& p)
 }
 }
 
+//=======================
+namespace s2 {
+	string cursor("tet");
+	//class screen;
+	////class	Window_mgr {
+	////public:
+	////	void clear(screen& s);
+	////};
+	typedef	double  pos;
+	class screen
+	{
+		//friend void Window_mgr::clear(screen&);
+	public:
 
 
-class screen
-{
-public: 
-	typedef  string::size_type   pos;
+		screen() = default;
+		screen(pos ht, pos wd, char c) :height(ht), width(wd) ,contents(ht*wd,c), cursor(1){  cout << cursor << endl; };
+		
+		screen& set(char cha);
+		pos set(pos r, pos col, char ch) {
+			contents[r * width + col] = ch;
+			return cursor;
+		}
+		typedef  string::size_type   pos;
+		char get()const { return contents[cursor]; }
+		char get(pos r, pos c) const { return contents[r * width + c]; }
 
-	screen() = default;
-	screen(pos ht, pos wd, char c):height(ht),width(wd),contents(ht*wd,c) {
+		screen& move(pos r, pos col);
+		void display(ostream& os)const;
+	public:
+		const pos  cursor = 0;
+		pos height = 0, width = 0;
+		string  contents;
+	};
+
+	//void Window_mgr::clear(screen& s)
+	//{
+	//	s.contents.clear();
+	//	s.cursor = 0;
+	//	s.width = 0;
+	//	s.height = 0;
+	//}
+
+
+
+	screen& screen::set(char cha) {
+		contents[cursor] = cha;
+		return *this;
 
 	}
-	screen& set(char cha) ;
-	screen& set(pos r, pos col, char ch);
-	char get()const { return contents[cursor]; }
-	char get(pos r, pos c) const { return contents[r * width + c]; }
-private:
-	pos  cursor = 0;
-	pos height = 0, width = 0;
-	string  contents;	
-};	
 
-inline screen& screen::set(char cha) {
-	contents[cursor] = cha;
-	return *this;
 
+
+	void  screen::display(ostream& os)const {
+		os << contents << endl;
+	}
 }
-
-inline screen& screen::set(pos r, pos col, char ch) {
-	contents[r * width + col] = ch;
-	return *this;
+//==============
+namespace s3{
+	class Y;
+	class X {
+	private:
+		class Y *py;
+	};
+	class Y {
+		class X x;
+	};
 }
 
 class ChapterSeven
@@ -81,7 +118,7 @@ public:
 			//read(cin, p1);
 			//print(cout,p1);
 
-			const screen v1;
+			const s2::screen v1;
 			v1.get();
 
 		}

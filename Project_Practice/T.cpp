@@ -17,6 +17,7 @@ int main()
 	//new ChapterSix(3);
 	ChapterSeven T(1);
 	show();
-
+	s2::screen  ss(3,6,'4');
+	ss.set(1,1,'2');
 	return EXIT_SUCCESS;
 }
