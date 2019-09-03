@@ -6,6 +6,20 @@
 #include "ChapterSeven.h"
 // ¿ªÊ¼
 
+class  NoDe {
+public:
+	NoDe(int a = 1) :sss(a) {};
+	int sss;
+};
+
+class C {
+public:
+	C(string str) {};
+	void add( const C& cr) {};
+	NoDe  cn;
+};
+
+
 int main()
 {
 
@@ -15,9 +29,13 @@ int main()
 	//new ChapterFour(11);
 	//new ChapterFive(4);
 	//new ChapterSix(3);
-	ChapterSeven T(1);
+	ChapterSeven T1((float)1);
+	ChapterSeven T2((double)2);
+
 	show();
-	s2::screen  ss(3,6,'4');
-	ss.set(1,1,'2');
+	C c1("sss");
+	string st("aaa");
+	c1.add(st);
+
 	return EXIT_SUCCESS;
 }

@@ -113,20 +113,29 @@ public:
 		{
 		case 1:
 		{
-			 const s1::Person p1("john","los angles");
-			cout << p1.GetAddr();
-			//read(cin, p1);
-			//print(cout,p1);
+			// const s1::Person p1("john","los angles");
+			//cout << p1.GetAddr();
+			////read(cin, p1);
+			////print(cout,p1);
 
-			const s2::screen v1;
-			v1.get();
+			//const s2::screen v1;
+			//v1.get();
+			cout << "case 1 " << endl;
 
+		}
+		break;
+		case 2:
+		{
+			cout << "case 2 " << endl;
 		}
 		break;
 		default:
 			break;
 		}
 	}
+	ChapterSeven(double d) :ChapterSeven((int)d) { cout << d << endl; };
+	ChapterSeven(float f) :ChapterSeven((int)f) { cout << f << endl; };
+
 };
 
 
