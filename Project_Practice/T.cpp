@@ -14,7 +14,7 @@ public:
 
 class C {
 public:
-	C(string str) {};
+	 C(string str) {};
 	void add( const C& cr) {};
 	NoDe  cn;
 };
@@ -34,7 +34,9 @@ int main()
 
 	show();
 	C c1("sss");
+
 	string st("aaa");
+	C c2 = st;
 	c1.add(st);
 
 	return EXIT_SUCCESS;
