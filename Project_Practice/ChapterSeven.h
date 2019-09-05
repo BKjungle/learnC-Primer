@@ -105,6 +105,30 @@ namespace s3{
 	};
 }
 
+
+namespace s4 {
+
+	class Account {
+	public:
+		Account(double tmRate = s4::Account::interRate) :myRate(tmRate){}		//	static member interRate as default argument
+
+	public:
+		static constexpr int Rates = 30;
+		int  arrayRate[Rates];
+
+		static double interRate;
+		double myRate;
+		//---
+		static Account  ac;  // ok   imcomplete type
+		
+		//==
+		static const int vecsize = 20;
+		static vector<double> vc(int);
+	};
+}
+constexpr int s4::Account::Rates;// 
+double s4::Account::interRate = 30;
+
 class ChapterSeven
 {
 public:
