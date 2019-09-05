@@ -20,8 +20,8 @@ int main()
 	//new ChapterFour(11);
 	//new ChapterFive(4);
 	//new ChapterSix(3);
-//	ChapterSeven T1((float)1);
-//	ChapterSeven T2((double)2);
+	//	ChapterSeven T1((float)1);
+	//	ChapterSeven T2((double)2);
 
 	show();
 
