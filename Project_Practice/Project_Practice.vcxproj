@@ -124,6 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ChapterEight_io.h" />
     <ClInclude Include="ChapterFive.h" />
     <ClInclude Include="ChapterFour.h" />
     <ClInclude Include="ChapterSeven.h" />

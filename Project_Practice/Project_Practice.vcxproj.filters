@@ -19,6 +19,9 @@
     <Filter Include="头文件\part 1:cpp base">
       <UniqueIdentifier>{6c5d7346-8593-452a-bee8-0e15154784a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\part 2:cpp std">
+      <UniqueIdentifier>{90446e80-88cc-487b-bb8c-94923914c4bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="note.h">
@@ -44,6 +47,9 @@
     </ClInclude>
     <ClInclude Include="ChapterThree.h">
       <Filter>头文件\part 1:cpp base</Filter>
+    </ClInclude>
+    <ClInclude Include="ChapterEight_io.h">
+      <Filter>头文件\part 2:cpp std</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

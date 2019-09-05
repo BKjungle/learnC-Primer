@@ -4,24 +4,23 @@
 #include "ChapterFive.h"
 #include "ChapterSix.h"
 #include "ChapterSeven.h"
+#include "ChapterEight_io.h"
 // ¿ªÊ¼
 
-struct Data {
-	int ival;
-	std::string s;
-};
 
 int main()
 {
 
 	//std::cout << "begin------------------------> ~" << std::endl;
 	
-	//new ChapterThree(3);
-	//new ChapterFour(11);
-	//new ChapterFive(4);
-	//new ChapterSix(3);
+	// ChapterThree(3);
+	// ChapterFour(11);
+	// ChapterFive(4);
+	// ChapterSix(3);
 	//	ChapterSeven T1((float)1);
 	//	ChapterSeven T2((double)2);
+	ChapterEight T3;
+
 
 	show();
 
