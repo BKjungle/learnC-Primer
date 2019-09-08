@@ -14,7 +14,7 @@ public:
 		///*sf.clear();*/
 		////if (sf.eof())
 		////	cout << "eof !!!" << endl;
-		//sf << "fs";
+		//sf << "fs"; 
 		//sf << "go" << flush;
 		//system("pause");
 		//sf << "\r\n";
@@ -33,5 +33,10 @@ public:
 		for (auto a : num) {
 			cout << a << endl;
 		}
+
+		ostringstream oss;
+		oss << " -" << "34";
+		oss << "0987";
+		cout << oss.str()	 << endl;
 	}
 };
