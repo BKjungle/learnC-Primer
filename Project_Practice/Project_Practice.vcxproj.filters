@@ -51,6 +51,9 @@
     <ClInclude Include="ChapterEight_io.h">
       <Filter>头文件\part 2:cpp std</Filter>
     </ClInclude>
+    <ClInclude Include="ChapterNine_sc.h">
+      <Filter>头文件\part 2:cpp std</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="T.cpp">

@@ -4,7 +4,9 @@
 #include "ChapterFive.h"
 #include "ChapterSix.h"
 #include "ChapterSeven.h"
+
 #include "ChapterEight_io.h"
+#include "ChapterNine_sc.h"
 // ¿ªÊ¼
 
 
@@ -19,8 +21,9 @@ int main()
 	// ChapterSix(3);
 	//	ChapterSeven T1((float)1);
 	//	ChapterSeven T2((double)2);
-	ChapterEight T3;
-
+	
+	//ChapterEight T3;
+	ChapterNine(2);
 
 	show();
 
