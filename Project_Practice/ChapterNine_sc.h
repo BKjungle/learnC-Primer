@@ -11,6 +11,16 @@ void double_and_insert(std::vector<int>& v, int some_val)
 
 }
 
+class fc {
+public:
+	template<typename T>
+	fc(T& arg) {
+		for (auto& ar : arg) {
+			cout << ar << "\n";
+		}
+	}
+};
+
 class ChapterNine
 {
 public:
@@ -70,6 +80,69 @@ public:
 		}
 		
 			break;
+		case 4:
+		{
+			vector<int> val;
+			//try {
+			int& rf0 = val.at(0);
+			int& rf1 = val[0];
+			int& rf2 = *val.begin();
+			int& rf3 = val.front();
+
+			//}
+		//	catch(out_of_range){
+			cout << "val.at is out_of_range";
+
+			//	}
+
+		}break;
+		case 5:
+		{
+			vector<int> val{ 1,2,3,4,5,6,7,8,9 };
+			cout << *val.begin() << endl;
+			auto iter = val.erase(val.begin(), val.end());
+			if (iter == val.end())
+				cout << "---size" << val.size() << endl;
+			//cout << *iter;
+		}break;
+		case 6: {
+		
+			int a[10] = { 1,2,3,4,5,6,7,8,9 };
+			vector<int> val(a,end(a));
+			list<int> lal(val.begin(),val.end());
+			int si = sizeof(a)/sizeof(int);
+			cout << "size of a=" << si << endl;
+		/*	for (int i = 0; i < si;  i++) {
+				val.push_back(a[i]);
+				lal.push_back(a[i]);
+			}*/
+			
+			fc::fc(val);
+			fc::fc(lal);
+			cout << "=================================";
+				auto iter = val.begin();
+				for (; iter != val.end();  )
+				{
+					if (*iter & 0x1)
+						++iter;
+					else
+						iter = val.erase(iter);
+
+				}
+				auto liter = lal.begin();
+				for (; liter != lal.end(); )
+				{
+					if (*liter & 0x1)
+						liter = lal.erase(liter);
+					else
+						++liter;
+						
+
+				}
+
+				fc::fc(val);
+				fc::fc(lal);
+		}
 		default:
 			;
 		}
