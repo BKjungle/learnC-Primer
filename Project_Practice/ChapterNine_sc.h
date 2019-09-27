@@ -9,7 +9,7 @@ void double_and_insert(std::vector<int>& v, int some_val)
 		if (*curr == some_val)
 			++(curr = v.insert(curr, 2 * some_val));
 
-}
+}	
 
 class fc {
 public:
@@ -143,6 +143,14 @@ public:
 				fc::fc(val);
 				fc::fc(lal);
 		}
+				break;
+		case 7 :
+		{
+			forward_list<int> vaf;
+			vaf.insert_after(vaf.before_begin(), {1,2,4});
+			fc::fc(vaf);
+		}
+		break;
 		default:
 			;
 		}

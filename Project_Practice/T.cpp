@@ -23,7 +23,7 @@ int main()
 	//	ChapterSeven T2((double)2);
 	
 	//ChapterEight T3;
-	ChapterNine(6);
+	ChapterNine(7);
 
 	show();
 
