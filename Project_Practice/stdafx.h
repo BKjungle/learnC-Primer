@@ -10,3 +10,14 @@
 #include <forward_list>
 #include <algorithm>
 using namespace std;
+
+
+
+template<typename T>
+void	
+pr(T& arg,bool is_n) 
+{
+	for (auto& ar : arg) {
+		cout << ar << (is_n?"\n" : "-" );
+	}
+}

@@ -10,16 +10,7 @@ void double_and_insert(std::vector<int>& v, int some_val)
 			++(curr = v.insert(curr, 2 * some_val));
 
 }	
-
-class fc {
-public:
-	template<typename T>
-	fc(T& arg) {
-		for (auto& ar : arg) {
-			cout << ar << "\n";
-		}
-	}
-};
+void FI_list(forward_list<string>& vaf, string& key, string& peg);
 
 class ChapterNine
 {
@@ -117,8 +108,8 @@ public:
 				lal.push_back(a[i]);
 			}*/
 			
-			fc::fc(val);
-			fc::fc(lal);
+			pr(val,0);
+			pr(lal,0);
 			cout << "=================================";
 				auto iter = val.begin();
 				for (; iter != val.end();  )
@@ -140,15 +131,40 @@ public:
 
 				}
 
-				fc::fc(val);
-				fc::fc(lal);
+				pr(val, 0);
+				pr(lal, 0);
 		}
 				break;
 		case 7 :
 		{
 			forward_list<int> vaf;
-			vaf.insert_after(vaf.before_begin(), {1,2,4});
-			fc::fc(vaf);
+			vaf.insert_after(vaf.before_begin(), {1,2,4,6,7,9,3,5,1,6,0,4,2,5,7,9});
+			pr(vaf, 0);
+			cout << endl;
+			auto cur	= vaf.begin();
+			auto prev	= vaf.before_begin();
+			while (cur != vaf.end()) 
+			{
+				if (*cur & 0x1) 
+				{
+					cur = vaf.erase_after(prev);
+				}
+				else
+				{
+					prev = cur;
+					++cur;
+				}
+			}
+		
+			pr(vaf,0);
+		}
+		break;
+		case 8:
+		{
+			forward_list<string> vf = {"1","2","3","4","5","5","7","8"};
+			string key("9");
+			string peg("9");
+			FI_list(vf, key, peg);
 		}
 		break;
 		default:
@@ -156,5 +172,31 @@ public:
 		}
 	}
 };
+
+void FI_list(forward_list<string>& vaf, string& key, string& peg)
+{
+	auto prev = vaf.before_begin();
+	auto cur = vaf.begin();
+	bool inserted = false;
+	while (cur != vaf.end())
+	{
+		if (*cur == key)
+		{
+			prev = vaf.insert_after(cur,peg);
+			cur = ++prev;
+			inserted = true;
+		}
+		else
+		{
+			prev = cur;
+			++cur;
+		}
+	}
+	if (!inserted) {
+		vaf.insert_after(prev,peg);
+	}
+
+	pr(vaf,0);
+}
 
 
