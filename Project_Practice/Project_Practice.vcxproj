@@ -130,6 +130,7 @@
     <ClInclude Include="ChapterNine_sc.h" />
     <ClInclude Include="ChapterSeven.h" />
     <ClInclude Include="ChapterSix.h" />
+    <ClInclude Include="ChapterTen_ge.h" />
     <ClInclude Include="ChapterThree.h" />
     <ClInclude Include="note.h" />
     <ClInclude Include="stdafx.h" />
