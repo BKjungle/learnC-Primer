@@ -164,9 +164,55 @@ public:
 			forward_list<string> vf = {"1","2","3","4","5","5","7","8"};
 			string key("9");
 			string peg("9");
+			vector<int> val = {1,2,3,4,5,6,77};
+			
 			FI_list(vf, key, peg);
 		}
 		break;
+		case 10 :
+		{
+			list<int> data = { 1,2,3,4,5,6,7 };
+			for (auto cur = data.begin(); cur != data.end();)
+
+				if (*cur & 0x1) {
+					cur = data.insert(cur, *cur); //std::advance(cur, 2);
+					cur++;
+					cur++;
+				}
+				else
+					cur = data.erase(cur);
+			pr(data, 0);
+		}break;
+		case 11:
+		{
+			vector<int> val;
+						
+			//val.reserve(10);
+			for (int i = 0; i < 24; ++i)
+				val.push_back(i);
+			//val.shrink_to_fit();
+			cout << val.size() << "-" << val.capacity() << endl;
+				val.resize(29);
+			cout << val.size() << "-" << val.capacity() << endl;
+			for (int i = 0; i < 14; ++i)
+				val.push_back(i);
+			cout << val.size() << "-" << val.capacity() << endl;
+
+
+		}
+		case 12:
+		{
+			const char* p = "is vs 2019!";
+			string str(const_cast< char*>(p), 5);
+			cout << str << endl;
+		}
+		break;
+		case 13:
+		{
+			string str("123456");
+			auto pos = str.find_first_of('53');
+			cout << pos << endl;
+		}
 		default:
 			;
 		}
