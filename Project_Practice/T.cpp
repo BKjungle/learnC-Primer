@@ -7,6 +7,7 @@
 
 #include "ChapterEight_io.h"
 #include "ChapterNine_sc.h"
+#include "ChapterTen_ge.h"
 // ¿ªÊ¼
 
 
@@ -23,8 +24,8 @@ int main()
 	//	ChapterSeven T2((double)2);
 	
 	//ChapterEight T3;
-	ChapterNine(14);
-
+	//ChapterNine(14);
+	Genetic(1);
 	show();
 
 	return EXIT_SUCCESS;
