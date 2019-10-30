@@ -167,6 +167,24 @@ public:
 			FI_list(vf, key, peg);
 		}
 		break;
+		case 9: 
+		{//ÖØĞÂ·ÖÅävec
+			vector<int> va = {1,2,3,4,5,6,7,8,9,10};
+			auto iter = va.begin();
+			auto it = iter + 2;
+			//cout << &(va[0]) << endl;
+			va.resize(30);
+			cout << "p0  = " << &va[0] << endl;
+			va.insert(va.begin()+9,99);
+			cout << va[10] << endl;
+
+			cout << "p0  = " << &va[0] << endl;
+
+			//
+			//=============================
+
+		}
+		break;
 		default:
 			;
 		}
