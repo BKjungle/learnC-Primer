@@ -8,6 +8,8 @@
 #include <set>
 #include <array>
 #include <forward_list>
+
+#include <stack>
 #include <algorithm>
 using namespace std;
 
