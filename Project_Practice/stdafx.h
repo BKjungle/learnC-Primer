@@ -14,7 +14,6 @@
 using namespace std;
 
 
-
 template<typename T>
 void	
 pr(T const& arg,bool is_n) 
