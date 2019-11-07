@@ -25,7 +25,7 @@ int main()
 	
 	//ChapterEight T3;
 	//ChapterNine(14);
-	Genetic(5);
+	Genetic(6);
 	show();
 
 	return EXIT_SUCCESS;

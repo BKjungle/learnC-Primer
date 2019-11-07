@@ -110,11 +110,18 @@ public:
 		case 5:
 		{
 			std::ifstream  ifs("./nnn.txt");
-			std::istream_iterator<string> itfs(ifs) , eof;
+			std::istream_iterator<string> itfs(ifs), eof;
 			vector<string> vstr;
 			copy(itfs, eof, back_inserter(vstr));
-			pr(vstr,1);
+			pr(vstr, 1);
 			getchar();
+		}break;
+		case 6:
+		{
+			std::vector<int> vec = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+			std::list<int> ret_lst(8 - 3);
+			std::copy(vec.cbegin() + 3, vec.cbegin() + 8, ret_lst.rbegin());
+			pr(ret_lst, 1);
 		}
 		default:
 			break;
