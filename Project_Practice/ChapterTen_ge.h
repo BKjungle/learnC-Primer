@@ -122,7 +122,17 @@ public:
 			std::list<int> ret_lst(8 - 3);
 			std::copy(vec.cbegin() + 3, vec.cbegin() + 8, ret_lst.rbegin());
 			pr(ret_lst, 1);
-		}
+
+			//
+
+			ifstream st("../Debug/nnn.txt");
+			istream_iterator<string> itstr(st), eof;
+			while (*itstr != "2345")
+				++itstr;
+			auto ti = itstr;
+			cout << "cur itstr = " << *itstr++ << endl;
+			cout << "*ti = " << *ti << "cur *itstr = " << *itstr<< endl;
+		}	
 		default:
 			break;
 		}
@@ -138,4 +148,5 @@ public:
 private:
 	std::vector<std::string> v{ "1234", "1234", "1234", "Hi", "wlan", "aang" };
 	vector<int> v1 = { 1,3,5,7,2,4,6,3,2,5,6,9,5,32,4,6,7 };
+	
 };
