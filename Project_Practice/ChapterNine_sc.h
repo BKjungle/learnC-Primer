@@ -1,5 +1,10 @@
 #pragma once
 #include "stdafx.h"
+#include <stack>
+#include <vector>
+#include <deque>
+#include <forward_list>
+
 void double_and_insert(std::vector<int>& v, int some_val)
 {
 

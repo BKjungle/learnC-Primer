@@ -8,6 +8,7 @@
 #include "ChapterEight_io.h"
 #include "ChapterNine_sc.h"
 #include "ChapterTen_ge.h"
+#include "ChapterEleven_associative-container.h"
 // ¿ªÊ¼
 
 
@@ -25,7 +26,8 @@ int main()
 	
 	//ChapterEight T3;
 	//ChapterNine(14);
-	Genetic(6);
+	//Genetic(6);
+	ASS(1);
 	show();
 
 	return EXIT_SUCCESS;
