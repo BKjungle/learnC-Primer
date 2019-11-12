@@ -14,9 +14,9 @@ public:
 		case 1:
 		{
 			map<string, string> m1;
-			m1.insert(make_pair<string, string>("1", "2"));
+			m1.insert(make_pair<string, string>("1", "1"));
 			m1.insert(make_pair<string, string>("3", "3"));
-			m1.insert(make_pair<string, string>("2", "3"));
+			m1.insert(make_pair<string, string>("2", "2"));
 
 			//m1["1"] = "3";
 			cout << m1.size() << endl;
@@ -34,12 +34,29 @@ public:
 
 			//but list err
 			std::list<int> li;
-			ml.insert(std::pair<std::list<int>::iterator, int>(li.begin(), 8));
-			cout << ml[li.begin()] << endl;
+			li.push_back(2);
+			li.push_back(3);
 
-		
-
+		//	ml.insert(std::pair<std::list<int>::iterator, int>(li.begin(), 8));
+		//	cout << ml[li.begin()] << endl;
+		//	cout << li.end() - li.begin() << endl; // error , list iterator is nodefine oper  "-"
+			m1.find("");
 			break;
+		}
+		case 2:
+		{
+			std::vector<std::pair<std::string, int>> vec;
+			std::string str;
+			int i;
+			while (std::cin >> str >> i) {
+				//vec.push_back(std::pair<std::string, int>(str, i));
+			//vec.push_back(std::make_pair(str, i));
+			//vec.push_back({ str, i });
+				vec.emplace_back(str, i); //!! easiest way.
+			}
+			for (const auto& p : vec)
+				std::cout << p.first << ":" << p.second << std::endl;
+
 		}
 
 		default:
