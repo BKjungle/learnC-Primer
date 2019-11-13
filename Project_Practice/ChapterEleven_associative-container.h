@@ -18,6 +18,9 @@ public:
 			m1.insert(make_pair<string, string>("3", "3"));
 			m1.insert(make_pair<string, string>("2", "2"));
 
+			map<string, string>::value_type mele = *m1.begin();
+			string() = mele.first
+
 			//m1["1"] = "3";
 			cout << m1.size() << endl;
 			for (auto& a : m1)
@@ -41,6 +44,9 @@ public:
 		//	cout << ml[li.begin()] << endl;
 		//	cout << li.end() - li.begin() << endl; // ----------------error , list iterator is nodefine operator  "-"
 			m1.find("");
+
+
+
 			break;
 		}
 		case 2:// pair¶Ô×é
