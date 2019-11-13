@@ -39,11 +39,11 @@ public:
 
 		//	ml.insert(std::pair<std::list<int>::iterator, int>(li.begin(), 8));
 		//	cout << ml[li.begin()] << endl;
-		//	cout << li.end() - li.begin() << endl; // error , list iterator is nodefine oper  "-"
+		//	cout << li.end() - li.begin() << endl; // ----------------error , list iterator is nodefine operator  "-"
 			m1.find("");
 			break;
 		}
-		case 2:
+		case 2:// pair¶Ô×é
 		{
 			std::vector<std::pair<std::string, int>> vec;
 			std::string str;
