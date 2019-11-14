@@ -19,7 +19,7 @@ public:
 			m1.insert(make_pair<string, string>("2", "2"));
 
 			map<string, string>::value_type mele = *m1.begin();
-			string() = mele.first
+			string() = mele.first;
 
 			//m1["1"] = "3";
 			cout << m1.size() << endl;
@@ -46,7 +46,6 @@ public:
 			m1.find("");
 
 
-
 			break;
 		}
 		case 2:// pair¶Ô×é
@@ -62,6 +61,30 @@ public:
 			}
 			for (const auto& p : vec)
 				std::cout << p.first << ":" << p.second << std::endl;
+
+		}break;
+		case 3:
+		{
+			//set 
+			set<int> s1;
+			s1.emplace(3);
+
+			cout << s1.size() << endl;
+
+			map<string,string> t1;
+			try {
+				t1.at("nihao");
+			}
+			catch (out_of_range) {
+				cout << "out_of_range 'nihao' in t1" << endl;
+			}
+				
+
+
+
+
+
+
 
 		}
 
