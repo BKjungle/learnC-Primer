@@ -67,7 +67,12 @@ public:
 		{
 			//set 
 			set<int> s1;
+			s1.insert({1,2,4,5});
 			s1.emplace(3);
+			map<int, int> mp{ {2,2},{5,6} };
+			map<int, int> mo; mo.insert({ 1,3 });
+			auto mv = mo[2];// 会默认添加元素
+			cout << "=="<< mv  << "==mv.size="<< mo.size()<< "==mp.size()=" << mp.size()<< endl;
 
 			cout << s1.size() << endl;
 
