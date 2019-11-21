@@ -2,7 +2,64 @@
 #include "stdafx.h"
 #include <map>
 #include <set>
+#include <fstream>
 using namespace std;
+
+map<string, string>
+file2map(ifstream& map_file) {
+
+	map<string, string> mt;
+
+	string key, value;
+	while (map_file >> key && getline(map_file, value)) {// getline 不跳过空格
+
+		if (value.size() > 1)
+			mt[key] = value.substr(1);
+		else
+			throw runtime_error(" no rule  for" + key);
+	}
+
+	return mt;
+}
+
+const string&
+key2value(string& key, map<string, string>& map_trans) {
+
+	auto iter = map_trans.find(key);
+	if (iter != map_trans.cend())
+	{
+		return iter->second;
+	}
+	else
+		return key;
+}
+
+void Work_Space(ifstream& map_file, ifstream&input)
+{
+	auto map_trans = file2map(map_file);
+
+	string tmpstr;
+	string word;
+	while (getline(input, tmpstr)) {
+		istringstream ss(tmpstr);
+
+		bool isfirst = true;
+		while (ss >> word) {
+			
+			if (isfirst) 
+				isfirst = false;
+			else
+				cout << " ";
+			cout << key2value(word, map_trans);
+
+		}
+
+		cout << endl;
+
+	}
+
+	return;
+}
 
 class ASS
 {
@@ -67,31 +124,32 @@ public:
 		{
 			//set 
 			set<int> s1;
-			s1.insert({1,2,4,5});
+			s1.insert({ 1,2,4,5 });
 			s1.emplace(3);
 			map<int, int> mp{ {2,2},{5,6} };
 			map<int, int> mo; mo.insert({ 1,3 });
 			auto mv = mo[2];// 会默认添加元素
-			cout << "=="<< mv  << "==mv.size="<< mo.size()<< "==mp.size()=" << mp.size()<< endl;
+			cout << "==" << mv << "==mv.size=" << mo.size() << "==mp.size()=" << mp.size() << endl;
 
 			cout << s1.size() << endl;
 
-			map<string,string> t1;
+			map<string, string> t1;
 			try {
 				t1.at("nihao");
 			}
 			catch (out_of_range) {
 				cout << "out_of_range 'nihao' in t1" << endl;
 			}
-				
+		}break;
+		case 4:
+		{
+			ifstream afd("tfile/a");
+			ifstream bfd("tfile/b");
+			
+			Work_Space(afd, bfd);
 
 
-
-
-
-
-
-		}
+		}break;
 
 		default:
 			break;
