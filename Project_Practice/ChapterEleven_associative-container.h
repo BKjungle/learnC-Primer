@@ -150,14 +150,14 @@ public:
 
 			int count = 0; 
 			float sum = 10;
-			/* //计算投资收益目标在固定利率下所用时间  
+			 //计算投资收益目标在固定利率下所用时间  
 			while (sum < 60.0)
 			{
 				sum = sum + (sum * 0.1);
 				++count;
 			}
 			cout << "count = " << count<< " sum = " << sum << endl;
-		}break;*/
+		}break;
 
 
 		default:
