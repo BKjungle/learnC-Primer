@@ -158,6 +158,23 @@ public:
 			}
 			cout << "count = " << count<< " sum = " << sum << endl;
 		}break;
+		case 5:
+		{
+			cout << "hasdh<'yess'>=" << hash<string>()("yees");
+
+			struct info {
+				int a;
+				int* p;
+			};
+			char * vp = new char[20];
+			info* ps = (info*)vp;
+
+			cout << "ps_addr = " << ps << "ps->a= "<< &(ps->a) << " ps->p = " << &(ps->p) << endl;
+			vp[19] = 'Q';
+			cout << *(char*)((char*)(&(ps->p)) + 15) << endl;
+			int b = 0;
+
+		}
 
 
 		default:
