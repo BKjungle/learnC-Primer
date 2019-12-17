@@ -9,6 +9,7 @@
 #include "ChapterNine_sc.h"
 #include "ChapterTen_ge.h"
 #include "ChapterEleven_associative-container.h"
+#include "ChapterTwelve_dynamically-allocate.h"
 // ¿ªÊ¼
 
 
@@ -27,7 +28,8 @@ int main()
 	//ChapterEight T3;
 	//ChapterNine(14);
 	//Genetic(6);
-	ASS(5);
+	//ASS(6);
+	Dynamic(1);
 
 
 	show();

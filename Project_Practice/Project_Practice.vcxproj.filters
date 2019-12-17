@@ -60,6 +60,9 @@
     <ClInclude Include="ChapterEleven_associative-container.h">
       <Filter>头文件\part 2:cpp std</Filter>
     </ClInclude>
+    <ClInclude Include="ChapterTwelve_dynamically-allocate.h">
+      <Filter>头文件\part 2:cpp std</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="T.cpp">

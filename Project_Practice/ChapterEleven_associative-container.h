@@ -61,11 +61,14 @@ void Work_Space(ifstream& map_file, ifstream&input)
 	return;
 }
 
+
 class ASS
 {
 public:
 	ASS(int a)
 	{
+		cout << __FUNCTION__ << endl;
+		
 		switch (a)
 		{
 		case 1:
@@ -174,6 +177,12 @@ public:
 			cout << *(char*)((char*)(&(ps->p)) + 15) << endl;
 			int b = 0;
 
+		}case 6:
+		{
+			auto fk = [](int a, int b) { cout << "is lambda" << endl; };
+			//cout << fk << endl;
+			fk(1,1);
+			//decltype(fk)(1,2);
 		}
 
 

@@ -133,6 +133,7 @@
     <ClInclude Include="ChapterSix.h" />
     <ClInclude Include="ChapterTen_ge.h" />
     <ClInclude Include="ChapterThree.h" />
+    <ClInclude Include="ChapterTwelve_dynamically-allocate.h" />
     <ClInclude Include="note.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="T.h" />
