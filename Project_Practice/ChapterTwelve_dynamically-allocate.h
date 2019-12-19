@@ -9,8 +9,14 @@ class A
 public:
 	A(int a) {
 		m_a = a;
+		cout << "in con " << m_a << endl;
 	}
-	int get()
+
+	A(const A& para) {
+		cout << " in copy func" << para.get() << endl;
+		m_a = para.get();
+	}
+	int get()const
 	{
 		return m_a;
 	}
@@ -18,7 +24,7 @@ public:
 		return this->get() < param.get();
 	}
 	~A(){
-		cout << "in A disconstruct" << endl;
+		cout << "in A disconstruct " << m_a << endl;
 	}
 	int m_a;
 };
@@ -33,18 +39,21 @@ public:
 		{
 			case 1:
 			{
-				shared_ptr<A> spA = make_shared<A>(2);
+				/*shared_ptr<A> spA = make_shared<A>(2);
 				cout <<"spA.get = " <<  spA.get() << endl;
 
 				A a(3);
 				A b(4);
-				cout << (a < b) << endl;
+				cout << (a < b) << endl;*/
 
-			/*	set<A> sA;
-				sA.insert(A(4));
-				sA.insert(A(5));
+				 vector<A> sA;
+				 A  a(4);
+
+				sA.push_back(a);
+				cout << "666" << endl;
+
 				sA.erase(sA.begin());
-				cout << "777" << endl;*/
+				cout << "777" << endl;
 			
 			}break;
 			case 2:
