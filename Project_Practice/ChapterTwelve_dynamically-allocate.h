@@ -53,7 +53,10 @@ public:
 				cout << "666" << endl;
 
 				sA.erase(sA.begin());
-				cout << "777" << endl;
+				cout << "777" << endl;  
+
+				std::vector<std::string>::size_type size = -1;
+				cout << " size=  "<< size << endl;
 			
 			}break;
 			case 2:
