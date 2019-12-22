@@ -29,6 +29,11 @@ public:
 	int m_a;
 };
 
+A func(int a) {
+	shared_ptr<A> sh_a(new A(a));
+	return *sh_a;
+}
+auto f = [](int a) { int b = a; };
 class Dynamic
 {
 public:
@@ -61,7 +66,26 @@ public:
 			}break;
 			case 2:
 			{
+				int* p = new int();
+				int* p1 = new int;
+				cout << "p = " << *p << "p1 = " << *p1 << endl;
+				delete p, p1;
 
+				A tmp =  func(2);
+				cout << "line " << __LINE__ << endl;
+			}
+			case 3:
+			{
+				// need to tell the size.
+				std::cout << "How long do you want the string? ";
+				int size{ 0 };
+				std::cin >> size;
+				char* input = new char[size + 1]();
+				std::cin.ignore();
+				std::cout << "input the string: ";
+				std::cin.get(input, size + 1);
+				std::cout << input;
+				delete[] input;
 			}
 		}
 	}

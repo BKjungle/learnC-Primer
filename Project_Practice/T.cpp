@@ -29,7 +29,7 @@ int main()
 	//ChapterNine(14);
 	//Genetic(6);
 	//ASS(6);
-	Dynamic(1);
+	Dynamic(3);
 
 
 	show();
