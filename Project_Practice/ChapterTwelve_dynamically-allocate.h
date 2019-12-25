@@ -86,6 +86,19 @@ public:
 				std::cin.get(input, size + 1);
 				std::cout << input;
 				delete[] input;
+			}break;
+			case 4:
+			{
+				cout <<  " sizeof(std::string)" << sizeof(string) << endl;
+
+				allocator<string> p;
+				string* ps = p.allocate(6);
+				p.construct(ps, "are");
+				p.construct(++ps,"you");
+				cout << (*(--ps)).c_str() << endl;
+				cout << (*(++ps)).c_str() << endl;
+				p.destroy(ps); p.destroy(--ps);
+				p.deallocate(ps,6);
 			}
 		}
 	}
