@@ -2,6 +2,9 @@
 #include <iostream>
 #include <memory>
 #include <set>
+#include <fstream>
+#include <string>
+#include <map>
 using namespace std;
 
 class A
@@ -34,6 +37,12 @@ A func(int a) {
 	return *sh_a;
 }
 auto f = [](int a) { int b = a; };
+
+
+
+
+
+
 class Dynamic
 {
 public:
@@ -100,6 +109,7 @@ public:
 				p.destroy(ps); p.destroy(--ps);
 				p.deallocate(ps,6);
 			}
+
 		}
 	}
 	~Dynamic() {
